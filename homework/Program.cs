@@ -305,6 +305,40 @@ namespace homework
             //}
 
 
+
+            //other version
+
+            Console.WriteLine("Enter 6 digit number");
+            string num = Console.ReadLine();
+            if (num.Length != 6)
+            {
+                Console.WriteLine("Error");
+            }
+            else
+            {
+                Console.WriteLine("Enter number from 1 to 6 you wnat to be replaced");
+                string firstInp = Console.ReadLine();
+                Console.WriteLine("Enter number from 1 to 6 you want to be replaced with");
+                string secondInp = Console.ReadLine();
+                if (!byte.TryParse(firstInp, out byte firstInputNum) || firstInputNum < 1 || firstInputNum > 6
+                  || !byte.TryParse(secondInp, out byte secondInputNum) || secondInputNum < 1 || secondInputNum > 6)
+                {
+                    Console.WriteLine("Wrong input");
+                }
+                else
+                {
+                    char letterAtFirstIndex = num[firstInputNum-1];
+                    char letterAtSecondIndex = num[secondInputNum-1];
+                    Console.WriteLine(letterAtSecondIndex);
+                    Console.WriteLine( letterAtFirstIndex);
+                    Console.WriteLine($"{num.Substring(secondInputNum - 1, num.Length + 1 - secondInputNum)}");
+                    string newString = $"{num.Substring(0, firstInputNum-1)}{letterAtSecondIndex}{num.Substring(firstInputNum, secondInputNum-firstInputNum-1)}{letterAtFirstIndex}{num.Substring(secondInputNum, num.Length-secondInputNum)}";
+                    Console.WriteLine(newString);
+                }
+            }
+
+
+
             //დავალება 7
             //მომხმარებელი შეიყვანს ტემპერატურის მაჩვენებლებს კლავიატურიდან. მომხმარებლის არჩევანის
             //მიხედვით, აპლიკაცია გარდაქმნის ტემპერატურას ფარენჰეიტიდან ცელსიუსში ან პირიქით
@@ -353,7 +387,7 @@ namespace homework
             //        season= "Autumn";
             //    else
             //        season = "Winter";
-            
+
             //    Console.WriteLine($"Season is {season} and weekday is {weekday}");
             //}
             //else
