@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logicsOperatos", "logicsOperatos\logicsOperatos.csproj", "{F324F876-3573-40E4-A9E0-6E89F2DF7E38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "logicsOperatos", "logicsOperatos\logicsOperatos.csproj", "{F324F876-3573-40E4-A9E0-6E89F2DF7E38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework", "homework\homework.csproj", "{702ED6E9-9D05-438C-969C-7FF2DFF6651B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F324F876-3573-40E4-A9E0-6E89F2DF7E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F324F876-3573-40E4-A9E0-6E89F2DF7E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F324F876-3573-40E4-A9E0-6E89F2DF7E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{702ED6E9-9D05-438C-969C-7FF2DFF6651B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{702ED6E9-9D05-438C-969C-7FF2DFF6651B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{702ED6E9-9D05-438C-969C-7FF2DFF6651B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{702ED6E9-9D05-438C-969C-7FF2DFF6651B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
